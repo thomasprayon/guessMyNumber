@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*
+background: #4d1ab2
+color: #874bff
+*/
+body {
+    background-color: #34009b;
+    color: #eee5ff;
+    font-family: 'Open Sans', sans-serif;
+    /* width: 106.68rem; */
+    height: 90vh;
+}
+
+.middle {
+    height: 45vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.8rem solid #210b4d;
+}
+
+.bottom {
+    height: 45vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.box-number {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #210b4d;
+    width: 8rem;
+    height: 8rem;
+    z-index: 1;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.title {
+    font-family: inherit;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+#number {
+    font-size: 6rem;
+}
+.btn {
+    /* background-color: #311073; */
+    background-color: #210b4d;
+    color: #eee5ff;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 5px solid #311073;
+    cursor: pointer;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-out;
+}
+
+.btn:hover {
+    color: #eee5ff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px #311073 inset;
+}
+
+.message {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+input {
+    margin: 2rem;
+    border-radius: 5px;
+}
+input[type='number'] {
+    width: 7rem;
+    height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    background-color: #210b4d;
+    color: #eee5ff;
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+}
+.score,
+.highscore {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.win {
+    background-color: #7fb319;
+    /* color: #311073; */
+}
+.lose {
+    background-color: #e6071d;
+}
+.winner-box {
+    width: 15rem;
+}
